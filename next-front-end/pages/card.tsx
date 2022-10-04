@@ -2,17 +2,10 @@ import React from 'react'
 import Circle from './circle'
 import Profile from './profile'
 import Status from './status'
-import '../styles/card.module.css'
+import styles from '../styles/card.module.css'
 
 interface CardProps {
-    name: string;
-    age: string;
-    add: string;
-    pic: string;
-    value: string;
-    label: string;
-    id: string;
-    prp: string;
+   pic: string;
 }
 
 const Card:React.FC<CardProps> = props => {
@@ -32,15 +25,18 @@ const Card:React.FC<CardProps> = props => {
 
 
     return (
+        <>
+        <h1>Giles</h1>
         <div className= "Card" >
             <Circle pic={props.pic} />
             <Profile name={att.name} age={att.age} add={att.address} />
-            <div className="status-divs">
+            <div className={styles.statusDivs}>
                 {stats.map(stat => (
                     <Status key={stat.id} value={stat.value} label={stat.label} id={stat.id} prp={stat.prp} />
                 ))}
             </div>
         </div>
+        </>
     )
 }
 

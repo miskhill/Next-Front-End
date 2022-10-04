@@ -21,3 +21,10 @@
     background-color: white;
 
 }
+
+.big-weight{
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(180, 2%, 19%);
+    background-color: white;
+}

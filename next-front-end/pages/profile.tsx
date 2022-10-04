@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/profile.module.css'
+import styles from '../styles/profile.module.css'
 
 interface ProfileProps {
     name: string;
@@ -9,9 +9,9 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = props => {
     return (
-        <div className= "profile">
-            <div className="container">
-                <p><span className="big-weight">{props.name}</span> {props.age} <br/>
+        <div className={styles.profile}>
+            <div className={styles.container}>
+                <p><span className={styles.bigWeight}>{props.name}</span> {props.age} <br/>
                     {props.add}
                 </p>
             </div>
