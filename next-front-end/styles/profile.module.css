@@ -1,0 +1,23 @@
+.profile{
+    height: 160px;
+    width: 300px;
+    background-color: white;
+    overflow:hidden;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 59%);
+}
+
+.profile .container{
+    position: relative;
+    top: 100px;
+    left: 3px;
+    text-align: center;
+
+
+}
+
+.profile .container p, .profile .container p span{
+    background-color: white;
+
+}
