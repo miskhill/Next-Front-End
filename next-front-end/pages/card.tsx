@@ -37,7 +37,7 @@ const Card:React.FC<CardProps> = props => {
             <Profile name={att.name} age={att.age} add={att.address} />
             <div className="status-divs">
                 {stats.map(stat => (
-                    <Status value={stat.value} label={stat.label} id={stat.id} prp={stat.prp} />
+                    <Status key={stat.id} value={stat.value} label={stat.label} id={stat.id} prp={stat.prp} />
                 ))}
             </div>
         </div>

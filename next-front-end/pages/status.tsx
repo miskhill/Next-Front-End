@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Status.css'
+import '../styles/status.module.css'
 
 interface StatusProps {
     value: string;
