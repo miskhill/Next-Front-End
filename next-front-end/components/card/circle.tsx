@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/circle.module.css'
+import '../../styles/circle.module.css'
 
 interface CircleProps {
     pic: string;

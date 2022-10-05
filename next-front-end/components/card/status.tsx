@@ -1,17 +1,15 @@
 import React from 'react'
-import '../styles/status.module.css'
+import styles from '../../styles/status.module.css'
 
 interface StatusProps {
     value: string;
     label: string;
-    id: string;
-    prp: string;
 }
 
 const Status: React.FC<StatusProps> = props => {
     return (
-        <div className={props.id}>
-            <div className={props.prp}>
+        <div className={styles.box3}>
+            <div className={styles.box1}>
                 <p> <span className="big-weight">{props.value}</span> <br/>
                     {props.label}</p>
             </div>

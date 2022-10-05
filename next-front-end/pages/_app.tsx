@@ -1,8 +1,21 @@
+import Layout from '../components/Layout'
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import React from "react";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+interface AppProps {
+    Component: React.ReactNode;
+    pageProps: React.ReactNode;
+}
+
+function MyApp({ props: AppProps }) {
+
+    const {Component, pageProps} = props;
+
+  return (
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+  )
 }
 
 export default MyApp

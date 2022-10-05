@@ -2,13 +2,16 @@ import React from 'react'
 import Circle from './circle'
 import Profile from './profile'
 import Status from './status'
-import styles from '../styles/card.module.css'
+import styles from '../../styles/card.module.css'
 
 interface CardProps {
    pic: string;
 }
 
+
 const Card:React.FC<CardProps> = props => {
+
+
 
     const att = {
         name: 'Victor Crest',
