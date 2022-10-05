@@ -17,7 +17,7 @@ const ErrorPage: NextPage = props => {
 
     return (
         <>
-            <h1>Oops this page was not found</h1>
+            <h1>Nothing to see here!</h1>
             <p>Go back to the <Link href="/"><a>Home Page</a></Link></p>
         </>
     )

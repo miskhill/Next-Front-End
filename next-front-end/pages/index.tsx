@@ -8,12 +8,12 @@ export default function Home() {
         <>
             <Head>
                 <title>User List | Home</title>
-                <meta name="keywords" content="users"/>
+                <meta name="keywords" content="motorpoint-users"/>
             </Head>
             <div>
                 <h1 className={styles.title}>Homepage</h1>
                 <p className={styles.text}>Gary Smith Motorpoint front end test - TypeScript and Nextjs</p>
-                <Link href="/users/">
+                <Link href="/motorpointUsers">
                     <a className={styles.btn}>See All Users</a>
                 </Link>
             </div>

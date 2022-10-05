@@ -2,7 +2,7 @@ import userStyles from '../styles/users.module.css'
 import userCardStyles from '../styles/userCard.module.css'
 import React from "react";
 
-interface UsersProps {
+interface MotorpointUsersProps {
     users: {
         id: number;
         name: string;
@@ -23,7 +23,7 @@ export const getStaticProps = async () => {
     }
 }
 
-const MotorpointUsers: React.FC<UsersProps> = ({ users }) => {
+const MotorpointUsers: React.FC<MotorpointUsersProps> = ({ users }) => {
     const gridStyle = {
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -34,7 +34,7 @@ const MotorpointUsers: React.FC<UsersProps> = ({ users }) => {
             {users.map(user => (
                 <div className={userCardStyles.userCard}>
                     <div className={userCardStyles.userCard__header}>
-                        <img className={userCardStyles.userCard__header__profileIcon} src="https://ui-avatars.com/api/?name=John+Doe" alt="avatar"/>
+                        <img className={userCardStyles.userCard__header__profileIcon} src={`https://ui-avatars.com/api/?name=${user.name}`} alt="avatar"/>
                     </div>
                     <div className={userCardStyles.userCard__body}>
                         <h3>{ user.name }</h3>
