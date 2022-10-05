@@ -1,4 +1,4 @@
-import styles from '../../styles/Ninjas.module.css'
+import styles from '../styles/users.module.css'
 import Link from 'next/link'
 import React from "react";
 
@@ -6,7 +6,10 @@ interface UsersProps {
     users: {
         id: number;
         name: string;
-    }
+        email: string;
+        city: string;
+        phone: string;
+    }[]
 }
 
 export const getStaticProps = async () => {
@@ -27,6 +30,9 @@ const Users: React.FC<UsersProps> = ({ users }) => {
                 <Link href={'/user/' + user.id} key={user.id}>
                     <a className={styles.single}>
                         <h3>{ user.name }</h3>
+                        <h3>{ user.email }</h3>
+                        <h3>{ user.city }</h3>
+                        <h3>{ user.phone }</h3>
                     </a>
                 </Link>
             ))}

@@ -1,15 +1,9 @@
 import Layout from '../components/Layout'
+import { AppProps } from 'next/app'
 import '../styles/globals.css'
 import React from "react";
 
-interface AppProps {
-    Component: React.ReactNode;
-    pageProps: React.ReactNode;
-}
-
-function MyApp({ props: AppProps }) {
-
-    const {Component, pageProps} = props;
+function MyApp({ Component, pageProps } : AppProps)  {
 
   return (
       <Layout>
