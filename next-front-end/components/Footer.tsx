@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            Motorpoint Front End Test
+            Motorpoint Front End Test: Gary Smith
         </footer>
     );
 }

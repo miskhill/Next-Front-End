@@ -5,6 +5,8 @@
 }
 .text {
     color: #777;
+    display: flex;
+    justify-content: center;
 }
 .btn {
     display: block;

@@ -1,15 +1,16 @@
 import Head from 'next/head'
+import styles from '../styles/about.module.css'
 
 const About = () => {
     return (
         <>
             <Head>
-                <title>User List | About</title>
+                <title className={styles.title}>User List | About</title>
                 <meta name="keywords" content="Motorpoint users"/>
             </Head>
             <div>
-                <h1>About</h1>
-                <p>I added an About page just to show some Nextjs page linking</p>
+                <h1 className={styles.title}>About</h1>
+                <p className={styles.text}>I added an About page just to show some Nextjs page linking</p>
             </div>
         </>
     );
