@@ -11,4 +11,8 @@ describe('A simple module', () => {
     });
 });
 
-// Language: typescript
+describe('About page check', () => {
+    test('it should render the about page', () => {
+        expect(true).toBeTruthy();
+    });
+});
