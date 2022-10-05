@@ -13,7 +13,7 @@ export default function Home() {
             <div>
                 <h1 className={styles.title}>Homepage</h1>
                 <p className={styles.text}>Gary Smith Motorpoint front end test - TypeScript and Nextjs</p>
-                <Link href="/motorpointUsers">
+                <Link href="/motorpoint-users">
                     <a className={styles.btn}>See All Users</a>
                 </Link>
             </div>

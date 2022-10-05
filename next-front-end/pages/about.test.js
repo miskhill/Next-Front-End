@@ -1,4 +1,4 @@
-import {getStaticProps} from "./motorpointUsers";
+import {getStaticProps} from "./motorpoint-users";
 
 require('reflect metadata')
 require('testing-library/jest-dom/extend-expect')
