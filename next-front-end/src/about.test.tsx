@@ -1,8 +1,6 @@
 import '@testing-library/jest-dom/extend-expect';
 import About from "../pages/about";
-import {getByTitle} from "@testing-library/dom";
 import {render, screen} from '@testing-library/react'
-import {userEvent} from "@testing-library/user-event/setup/index";
 
 //just testing that the library is correctly working with this test.
 function simpleFunc() {
