@@ -2,6 +2,7 @@
 
 Wins:
 1. Followed the task sheet and I believe all points are covered.
+2. I use Next most days however I do not usually start a project from scratch. 
 2. Passing in the usernames as initials for each user as there was no photo.
 3. Handled incorrect routes with an error page.
 

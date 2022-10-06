@@ -1,8 +1,9 @@
 import '@testing-library/jest-dom/extend-expect';
-import {render} from "@testing-library/react";
 import About from "../pages/about";
-import {userEvent} from "@testing-library/user-event/setup/index";
+import {getByTitle} from "@testing-library/dom";
+import {render, screen} from '@testing-library/react'
 
+//just testing that the library is correctly working with this test.
 function simpleFunc() {
     return 'hello!';
 }
@@ -12,22 +13,19 @@ describe('A simple module', () => {
     });
 });
 
+//and here - should return true.
 describe('About page check', () => {
     test('it should render the about page', () => {
         expect(true).toBeTruthy();
     });
 });
 
-// test('renders About', () => {
-//     render(<About />);
-//     const linkElement = screen.getByText(/About/i);
-//     expect(linkElement).toBeInTheDocument();
-// });
 
-test("Test theme button", () => {
-    render(<About />);
-    const buttonEl = screen.getByText(/Current theme/i);
-
-    userEvent.click(buttonEl);
-    expect(buttonEl).toHaveTextContent(/dark/i);
+describe('About', () =>{
+    it('should have the correct title', async function () {
+        const title = await screen.getByTitle('About Page');
+        console.log('Browser Reported Page Title: ' + title);
+        expect(title).toEqual('About Page');
+    });
 });
+
