@@ -1,17 +1,10 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  future: {
-    webpack5: true,
-  },
-  // webpack: (
-  //     config,
-  //     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
-  // ) => {
-  //   // Important: return the modified config
-  //   return config
-  // },
-}
+    images: {
+        domains: ['ui-avatars.com'],
+    }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

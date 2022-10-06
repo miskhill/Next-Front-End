@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/about.module.css'
+import React from "react";
 
-const About = () => {
+const About: React.FC = () => {
     return (
         <>
             <Head>

@@ -19,7 +19,6 @@
     "react-scripts": "^5.0.1",
     "run-script-webpack-plugin": "^0.1.1",
     "testing-library": "^0.0.2",
-    "types": "^0.1.1",
     "webpack": "^5.74.0",
     "webpack-node-externals": "^3.0.0"
   },

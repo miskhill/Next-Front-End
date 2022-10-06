@@ -1,6 +1,8 @@
 import userStyles from '../styles/users.module.css'
 import userCardStyles from '../styles/userCard.module.css'
 import React from "react";
+import Image from "next/image";
+import UserCard from "../components/Card";
 
 interface MotorpointUsersProps {
     users: {
@@ -32,17 +34,7 @@ const MotorpointUsers: React.FC<MotorpointUsersProps> = ({ users }) => {
     return (
         <div className={userStyles.grid}>
             {users.map(user => (
-                <div className={userCardStyles.userCard}>
-                    <div className={userCardStyles.userCard__header}>
-                        <img className={userCardStyles.userCard__header__profileIcon} src={`https://ui-avatars.com/api/?name=${user.name}`} alt="avatar"/>
-                    </div>
-                    <div className={userCardStyles.userCard__body}>
-                        <h3>{ user.name }</h3>
-                        <h3>{ user.email }</h3>
-                        <h3>{ user.address.city }</h3>
-                        <h3>{ user.phone }</h3>
-                    </div>
-                </div>
+     <UserCard key={user.id} name={user.name} email={user.email} city={user.address.city} phone={user.phone} id={user.id} />
             ))}
         </div>
     );
