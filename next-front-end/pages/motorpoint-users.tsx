@@ -1,7 +1,5 @@
 import userStyles from '../styles/users.module.css'
-import userCardStyles from '../styles/userCard.module.css'
 import React from "react";
-import Image from "next/image";
 import UserCard from "../components/Card";
 
 interface MotorpointUsersProps {
