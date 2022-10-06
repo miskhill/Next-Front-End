@@ -1,6 +1,6 @@
-import userCardStyles from "../styles/userCard.module.css";
 import Image from "next/image";
 import React from "react";
+import userCardStyles from "../styles/userCard.module.css";
 
 export interface UserCardProps {
     name: string;

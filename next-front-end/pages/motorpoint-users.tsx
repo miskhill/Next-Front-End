@@ -1,6 +1,6 @@
-import userStyles from '../styles/users.module.css'
 import React from "react";
 import UserCard from "../components/Card";
+import userStyles from '../styles/users.module.css'
 
 interface MotorpointUsersProps {
     users: {
